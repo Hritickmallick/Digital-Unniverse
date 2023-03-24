@@ -1,17 +1,17 @@
 Fonts
-https://fonts.google.com/specimen/Arimo
+https://fonts.google.com/specimen/Arimo   (DONE)
 
-when clicking on scroll text on the banner, the next section should scroll at the top smoothly
+when clicking on scroll text on the banner, the next section should scroll at the top smoothly  (DONE)
 
-you can see hover effects in the provided design
+you can see hover effects in the provided design  (DONE)
 
-add hover effects for the GET IN TOUCH, VIEW ALL SERVICES etc. Links
+add hover effects for the GET IN TOUCH, VIEW ALL SERVICES etc. Links  (DONE)
 
-Discover Our Awards > this is the slider section, when clicking on the arrow, years will be slide
+Discover Our Awards > this is the slider section, when clicking on the arrow, years will be slide  (DONE)
 
-In https://prnt.sc/OwJDVAIVnT_4  section numbers will animate from 0, https://github.com/bfintal/Counter-Up2
+In https://prnt.sc/OwJDVAIVnT_4  section numbers will animate from 0, https://github.com/bfintal/Counter-Up2 (DONE)
 
-when clicking on the bottom right arrow, the page will be scrolled to the top
+when clicking on the bottom right arrow, the page will be scrolled to the top  (DONE)
 
 
 

@@ -1,46 +1,4 @@
-$(document).ready(function () {
-    $(".img-1").mouseenter(function () {
-        $(".img-1").css('position', 'fixed')
-    })
-    $(".img-1").mouseleave(function () {
-        $(".img-1").css('position', 'absolute')
-    })
 
-    $(".img-2").mouseenter(function () {
-        $(".img-2").css('position', 'fixed')
-    })
-    $(".img-2").mouseleave(function () {
-        $(".img-2").css('position', 'absolute')
-    })
-
-    $(".img-3").mouseenter(function () {
-        $(".img-3").css('position', 'fixed')
-    })
-    $(".img-3").mouseleave(function () {
-        $(".img-3").css('position', 'absolute')
-    })
-
-    $(".img-4").mouseenter(function () {
-        $(".img-4").css('position', 'fixed')
-    })
-    $(".img-4").mouseleave(function () {
-        $(".img-4").css('position', 'absolute')
-    })
-
-    $(".img-5").mouseenter(function () {
-        $(".img-5").css('position', 'fixed')
-    })
-    $(".img-5").mouseleave(function () {
-        $(".img-5").css('position', 'absolute')
-    })
-
-    $(".img-6").mouseenter(function () {
-        $(".img-6").css('position', 'fixed')
-    })
-    $(".img-6").mouseleave(function () {
-        $(".img-6").css('position', 'absolute')
-    })
-})
 
 $('.multiple-items').slick({
     infinite: true,
@@ -67,9 +25,19 @@ $('.multiple-items').slick({
             }
           }
     ]
+});
+
+$('.clients-slider').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows:false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 1200
+  });
 
     
-});
 
 $('.slider-2').slick({
     infinite: true,
@@ -113,27 +81,46 @@ $('.center').slick({
 
 $(document).ready(function(){
     $('.search-menu').click(function(){
-        $(".search-menu").hide(),
+        $(".search-menu").css('opacity','0'),
         $('.hidden').addClass("close-btn"),
         $('.hide').addClass("search-box");
     })
 
     $('.hidden').click(function(){
         $('.hidden').removeClass("close-btn"),
-        $('.search-menu').show(),
+        $(".search-menu").css('opacity','1'),
         $('.hide').removeClass('search-box');
     })
 })
 
 $(document).ready(function(){
     $('.hamburger-menu').click(function(){
-        $('.section-hamburger-menu').addClass("close-mark")
-    })
+        $('.section-hamburger-menu').show(),
+        $('.section-hamburger-menu').css('background-color','#0c0c0cf7'),
+        $('.hamburger-close').addClass('animate__fadeInDown'),
+        $(".hamburger-col-row-2").addClass('animate__slideInRight')
+    });
 
     $('.hamburger-close').click(function(){
-        $(".section-hamburger-menu").removeClass('close-mark')
+        $(".hamburger-col-row-2").removeClass('animate__slideInRight'),
+        $('.section-hamburger-menu').css('background-color','transparent')
+        $('.section-hamburger-menu').hide(1000)
+    });
+
+    $('.section-hamburger-menu').click(function(){
+        $(".hamburger-col-row-2").removeClass('animate__slideInRight'),
+        $('.section-hamburger-menu').css('background-color','transparent')
+        $('.section-hamburger-menu').hide(1000)
     })
+
+
 })
+        
+      
+
+       
+
+      
 
 $(document).ready(function(){
     $('.hamburger-nav-logo').click(function(){
@@ -158,7 +145,7 @@ const callback = entries => {
 		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
                     for(const counter of counters) {
       	              counterUp( counter, {
-      		              duration: 3000,
+      		              duration: 800,
       		              delay: 16,
       	              })
                     el.classList.add( 'is-visible' )

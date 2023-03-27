@@ -107,12 +107,6 @@ $(document).ready(function(){
         $('.section-hamburger-menu').hide(1000)
     });
 
-    $('.section-hamburger-menu').click(function(){
-        $(".hamburger-col-row-2").removeClass('animate__slideInRight'),
-        $('.section-hamburger-menu').css('background-color','transparent')
-        $('.section-hamburger-menu').hide(1000)
-    })
-
 
 })
         

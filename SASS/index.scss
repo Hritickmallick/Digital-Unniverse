@@ -44,15 +44,22 @@
                 .hamburger-col-row-1 {
                     width: 50%;
                     text-align: center;
-                    /*position: relative;
+
+                    @include mobile {
+                        text-align: left;
+                    }
 
                     @include small-mobiles {
+                        position: absolute;
                         z-index: 1;
-                    }*/
+                        right: -80px;
+                        top: 0;
+                    }
+
+
 
                     .hamburger-close {
-                        /*position: absolute;
-                        top: 25px;*/
+
                         display: inline-block;
                         color: $text-color;
                         right: 35%;
@@ -62,7 +69,8 @@
                         font-size: $font-size-25;
 
                         @include desktop {
-                            right: 50%;
+                            margin-right: 40px;
+                            margin-top: 20px;
                         }
 
                         @include mobile {

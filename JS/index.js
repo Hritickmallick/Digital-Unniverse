@@ -81,15 +81,24 @@ $('.center').slick({
 
 $(document).ready(function(){
     $('.search-menu').click(function(){
+      $('.search-menu').removeClass('animate__bounceInDown'),
+      $('.search-menu').addClass('animate__fadeOut'),
         $(".search-menu").css('opacity','0'),
         $('.hidden').addClass("close-btn"),
-        $('.hide').addClass("search-box");
+        $('.hidden').addClass("animate__bounceInDown"),
+        $('.hide').addClass("search-box"),
+        $('.hide').addClass('animate__tada')
     })
 
     $('.hidden').click(function(){
+      $('.search-menu').removeClass('animate__fadeOut'),
+      $('.search-menu').removeClass('animate__bounceOut'),
         $('.hidden').removeClass("close-btn"),
+        $('.hidden').removeClass("animate__bounceInDown"),
         $(".search-menu").css('opacity','1'),
-        $('.hide').removeClass('search-box');
+        $('.hide').removeClass('search-box'),
+        $('.hide').removeClass('animate__tada'),
+        $('.search-menu').addClass('animate__bounceInDown')
     })
 })
 
@@ -103,18 +112,14 @@ $(document).ready(function(){
 
     $('.hamburger-close').click(function(){
         $(".hamburger-col-row-2").removeClass('animate__slideInRight'),
-        $('.section-hamburger-menu').css('background-color','transparent')
+        $('.hamburger-close').removeClass('animate__fadeInDown'),
+        $('.section-hamburger-menu').css('background-color','transparent' )
         $('.section-hamburger-menu').hide(1000)
     });
 
 
 })
-        
-      
 
-       
-
-      
 
 $(document).ready(function(){
     $('.hamburger-nav-logo').click(function(){
